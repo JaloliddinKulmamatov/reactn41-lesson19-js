@@ -1,0 +1,405 @@
+@use "../global.scss";
+@use "../utils/variables" as var;
+
+
+
+#header__adverse {
+    padding:102px 0 45px 0 ;
+    align-items: center;
+    background-image: url(../../assets/images/home/adversting-background.png);
+    h3 {
+        font-family: "Rubik700",sans-serif;
+        color: var.$main-color; 
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+}
+
+
+
+
+.discount__tittle,.items__tittle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    h2 {
+            color: var.$main-color;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+        }
+    a {
+        color:var.$gray-color;
+        text-decoration: none;
+        color: var.$main-color;
+        text-align: center;        
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+main {
+    padding: 62px 0;
+    background-color: #fff;
+    background: #FBF8EC;
+}
+
+.main__shop {
+    img {
+        width: 100%;
+    }
+}
+
+.card__pay {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    .card__cost-card {
+            color: var.$main-color;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+        }
+    .card__pay-card{
+        color: var.$light-gray;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+
+.discount__cards,.items__cards {
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    gap: 16px;
+    padding: 30px 0;
+}
+.discount__card,.item__card {
+    max-width: 272px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, .1);
+    transition: all 0.2;
+}
+
+.discount__card__description {
+    color: #414141;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.item__card__description {
+    color: #414141;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.discount__card__banknote {
+    h2{ 
+    color: #606060;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+}
+
+
+.discount__card__credit {
+    padding: 2px;
+    h2 {
+        color: #414141;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 8px;
+    }
+    p {
+        color: #bfbfbf;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
+
+
+.item__card__cost {
+    h2 {
+    color: #414141;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+}
+
+
+.discount__card__in-cart {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #70c05b;
+    color: #70c05b;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    transition: all 250ms;
+}
+
+.discount__card__in-cart:hover {
+    background-color: #f63;
+    border: 1px solid #f63;
+    color: #fff;
+}
+
+
+.discount__card__review {
+    img {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}
+
+.discount__card__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer__title {
+    h2 {
+    color:  #414141;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 16px;
+    }
+}
+
+#offer__cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    .offer__card-1,.offer__card-2 {
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.50);
+        }
+        h3 {
+        color:  #414141;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        }
+        p {
+        color:#414141;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        }
+    }
+    .offer__card-1 {
+        background:  #FCD5BA;
+        padding: 20px 0 20px 20px ;
+        img {
+            width: 100%;
+        }
+    }
+    .offer__card-2 {
+        img {
+        width: 100%;
+        }
+        padding: 30px 19px 40px 18px;
+        background: var(--Main-SecondaryMuted, #E5FFDE);
+    }
+}
+
+#location {
+    padding: 120px 0;
+}
+
+.location__tittle {
+    color: var(--Main-onSurface, #414141);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 16px;
+}
+
+.location__button {
+    margin-bottom: 24px;
+    button {
+    margin-right: 18px 8px;
+    border-radius: 4px;
+    padding: 8px;
+    border: 0px solid;
+    background: var(--Grayscale-Lightest, #F3F2F1);
+    color: var(--Grayscale-Hardest, #606060);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all 0.5s;
+    &:hover {
+            border-radius: 4px;
+            background: var(--Main-Secondary, #70C05B);
+            color: var(--Main-onSecondary, #FFF);
+        }
+}
+}
+
+.articles__cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.articles__titttle {
+    color: var(--Main-onSurface, #414141);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: 40px;
+}
+
+.articles__chart {
+    background-color: #fff;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+    }
+}
+
+.articles_cars_button {
+    padding: 10px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    &:hover {
+        box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.20);
+    }
+    p {
+       margin: 10px 0;
+    color: var(--Main-onSurface, #414141);
+    font-weight: 400;
+    line-height: 150%;
+    }
+    h4 {
+        color: var(--Main-onSurface, #414141);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .card__data {
+    color: var(--Grayscale-Hard, #8F8F8F);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    button {
+        color: var(--Main-Secondary, #70C05B);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        border-radius: 4px;
+        background: var(--Main-SecondaryMuted, #E5FFDE);
+        border: 0px solid;
+        padding: 10px;
+        transition: 0.5s;
+        &:hover {
+            background: var(--Main-Secondary, #70C05B);
+            color: #fff;
+        }
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .discount__card,.item__card {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 500px) {
+    .item__card {
+        max-width: 160px;
+    }
+}
+
+@media (min-width: 500px) {
+    .discount__cards {
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 920px) {
+    .discount__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 500px) {
+    .items__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 920px) {
+    .items__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (min-width: 980px) {
+    #offer__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (min-width: 980px) {
+    .location__button {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (min-width: 670px) {
+    .articles__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .articles__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

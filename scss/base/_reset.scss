@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik' ,sans-serif;
+}
+
+button,a {
+     cursor: pointer;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+}

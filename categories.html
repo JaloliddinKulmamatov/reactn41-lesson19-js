@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/categories.min.css">
+    <title>Document</title>
+</head>
+<body>
+</body>
+    <div id="katalog" style="top: 70px;">
+        <div class="katalog__menu container__1250">
+            <ul>
+                <img src="./assets/images/nav/hamburger-menu.png" alt="">
+            </ul>
+        </div>
+    </div>
+    <nav id="navbar">
+        <ul class="nav__list">
+            <a href="#" class="header__logo">
+                <img src="./assets/images/nav/nav__logo.svg" alt="logo" />
+            </a>
+            <div class="nav__toggle">
+                <button>
+                    <img src="assets/images/nav/catalog.svg" alt="abc">
+                </button>
+                <a href="pages/categories.html">Каталог</a>
+            </div>
+            <div class="InputContainer">
+                <input placeholder="Search.." id="input" class="input" name="text" type="text">
+            </div>
+            <div class="icons">
+                <a href="favorite.html"><img src="./assets/images/nav/lovely.svg" alt="icon" />
+                    <p>Избранное</p>
+                </a>
+                <a href="products.html"><img src="./assets/images/nav/delive.svg" alt="icon" />
+                    <p>продукты</p>
+                </a>
+                <a href="cart.html">
+                    <img src="./assets/images/nav/basket.svg" alt="abc">
+                    <p>Корзина</p>
+                </a>
+            </div>
+            <div class="user">
+                <img src="./assets/images/nav/avatar.png" alt="logo" />
+                <h2>Алексей</h2>
+            </div>
+        </ul>
+    </nav>
+    <main>
+    <div class="container__1235">
+        <section id="caregories__link">
+            <ol class="caregories__link">
+                <li class="categories__li">
+                    <a href="index.html">Главная ></a> 
+                </li>
+                <li class="categories__li">
+                    <a href="#">Каталог</a>
+                </li>
+            </ol>
+        </section>
+        <section id="categories__direct">     
+                <div class="categories__tittle">
+                    <h2>Каталог</h2>
+                </div>
+                <div class="caregories__cards">
+                    <!-- <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Молоко, сыр, яйцо</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="abc">
+                            <h4>Хлеб</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Фрукты и овощи</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Замороженные продукты</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Напитки</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card"></div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Кондитерские изделия</h4>
+                        </div>
+                    </div>
+                    <div class="caregories__row">
+                        <div class="categories__card">
+                            <img src="" alt="">
+                            <h4>Чай, кофе</h4>
+                        </div> -->
+                </div>
+        </section>
+    </div>
+    </main>
+
+        <footer>
+            <div class="container__1250 footer">
+                <ul class="footer__list">
+                    <li class="footer__logo">
+                        <a href="#">
+                            <img src="assets/images/nav/nav__logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="pages/about.html">О компании</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="pages/contact.html">Контакты</a>
+                    </li>
+                    <li class="footer__items">
+                        <a href="pages/vacancy.html">Вакансии</a>
+                    </li>
+                    <li class="footer__items"><a href="pages/vacancy.html">Статьи</a></li>
+                    <li class="footer__items">
+                        <a href="pages/articles.html">Политика обработки персональных данных</a>
+                    </li>
+                </ul>
+                <div class="footer__end">
+                    <div class="footer__brands">
+                        <img src="assets/images/footer/instagram.svg" alt="">
+                        <img src="assets/images/footer/wkontacte.svg" alt="">
+                        <img src="assets/images/footer/facebook.svg" alt="">
+                        <img src="assets/images/footer/ok.svg" alt="">
+                    </div>
+                    <div class="phone">
+                        <a href="pages/contact.html">
+                            <img src="assets/images/phone.svg" alt="">
+                        </a>
+                        <p>8 800 777 33 33</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script>
+        window.onload = function () {
+            var dropdown = document.getElementById("katalog");
+            var toggleButton = document.querySelector('.nav__toggle button');
+
+            toggleButton.onclick = function (event) {
+                // Toggle the display property of the dropdown
+                dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+
+                // Prevent the click event from propagating to the window.onclick handler
+                event.stopPropagation();
+            };
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function () {
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                }
+            };
+        }
+
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/categories-data.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html>
